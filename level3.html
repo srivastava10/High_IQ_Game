@@ -1,0 +1,67 @@
+<html>
+</head>
+</head>
+
+<style>
+body{
+		border: 20px;
+		color: black;
+		font-family: fantasy;
+		font-size:30px;
+		 
+	}
+</style>
+
+
+<script>
+	var today = new Date();
+	var time = today.getHours();
+
+	window.addEventListener('contextmenu',
+	function(e) {
+		
+		e.preventDefault();
+	}, false);	
+	
+	function ans() {
+		var x = document.getElementById("inp").value;
+		if(x=="6"){
+			location.replace("level4.html");
+		}
+		else if(x==time){
+			location.replace("time.html");
+		}	
+	}
+
+</script>
+
+
+<body background="img.png">
+<center>
+<h1>LEVEL 3</h1>
+
+<div>
+	<p></p>
+	<marquee direction="left"><input></marquee>
+	<br>
+	<marquee direction="right"><input></marquee>
+	<br>
+	<marquee Scrolldelay=200><input type = "text" id="inp" oninput="ans()"></marquee>
+	<br>
+	<br>
+	<marquee><input></marquee>
+	<input>
+	<marquee><input></marquee>
+
+</div>
+<br>
+<br><br>
+
+<p>| The amount of water(in mL) that should be added to reduce 9 mL lotion, containing 50% alcohol </p>
+<p>  to a lotion containing 30% alcohol, is |</p>
+</body>
+</html>
+
+
+
+

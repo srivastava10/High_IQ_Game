@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>299792458</title>
+</head>
+<style>
+
+	body{
+		border: 20px;
+		color: black;
+		font-family: monospace;
+		font-size:30px;
+		 
+	}
+	.button {
+		  background-color: #4CAF50; 
+		  border: none;
+		  color: white;
+		  padding: 16px 32px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		  margin: 4px 2px;
+		  transition-duration: 0.7s;
+		  cursor: pointer;
+}
+
+	.button1 {
+	  background-color: transparent; 
+	  color: black; 
+	  border: 2px solid lightblue;
+	}
+
+	.button1:hover {
+	  background-color: lightblue;
+	  color: white;
+}
+
+</style>
+
+<script>
+	var today = new Date();
+	var time = today.getHours();
+	
+	window.addEventListener('contextmenu',
+	function(e) {
+		
+		e.preventDefault();
+	}, false);
+	
+	function f() {
+	var x = document.getElementById("inp1").value;
+	var y = document.getElementById("inp2").value;
+	
+	if(x=="477" && y=="Speed of light"){
+		location.replace("level3.html");
+	}
+	else if(x==time || y==time){
+			location.replace("time.html");
+		}	
+	
+	}
+	
+	
+	
+	
+</script>
+
+
+
+<body background="img.png">
+<center>
+<h1>LEVEL 2</h1>
+<div>
+	<p>[ (11101)<sub>y</sub> X (1011)<sub>y</sub> ]<sub>8</sub></p>
+	<input type = "text" id="inp1"><br><br><br>
+	<input type = "text" id="inp2" oninput="f()"><br><br>
+	<button class="button button1">Distraction</button>
+</div>
+
+
+</body>
+
+</html>

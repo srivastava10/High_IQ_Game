@@ -1,0 +1,83 @@
+<html>
+
+<script>
+	function start() {
+		location.replace("level1.html");
+	}
+	
+	
+	
+	
+</script>
+
+<style>
+
+	div{
+		font-size:25px;
+		border:2px;
+		background-color:rgb(210,210,245);
+		height:260px;
+		width:1000px;
+		padding:10px;
+		border-radius:30px;
+	
+	}
+	
+	body{
+		border: 20px;
+		color: black;
+		font-family: monospace;
+		font-size:30px;
+		 
+	}
+	
+	
+	
+	.button {
+		  background-color: #4CAF50; 
+		  border: none;
+		  color: white;
+		  padding: 16px 32px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		  margin: 4px 2px;
+		  transition-duration: 0.7s;
+		  cursor: pointer;
+}
+
+	.button1 {
+	  background-color: transparent; 
+	  color: black; 
+	  border: 2px solid lightblue;
+	}
+
+	.button1:hover {
+	  background-color: lightblue;
+	  color: white;
+}
+
+</style>
+
+
+<body background="img.png">
+<center>
+<h2>Game Rules</h2>
+<h4 id="h"></h4>
+<br><br>
+<div>
+	<p>There is only one message that will lead you to the victory</p>
+	<p>You must be able to differentiate between the clues and distractions</p>
+	<p>No timer, but time will decide whether you win this game or lose this game</p>
+</div>
+<br><br>
+<button class= "button button1" onclick="start()">Start Game</button>
+
+</body>
+</html>
+
+<!--
+	24, not 12
+
+ -->

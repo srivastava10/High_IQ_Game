@@ -1,0 +1,85 @@
+<html>
+<head></head>
+<style>
+	
+	body{
+		border: 20px;
+		color: black;
+		font-family: monospace;
+		font-size:20px;
+		 
+	}
+	
+	
+	.button {
+		  background-color: #4CAF50; 
+		  border: none;
+		  color: white;
+		  padding: 16px 32px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		  margin: 4px 2px;
+		  transition-duration: 0.7s;
+		  cursor: pointer;
+}
+
+	.button1 {
+	  background-color: transparent; 
+	  color: black; 
+	  border: 2px solid lightblue;
+	}
+
+	.button1:hover {
+	  background-color: lightblue;
+	  color: white;
+}
+</style>
+
+<script>
+	window.addEventListener('contextmenu',
+	function(e) {
+		
+		e.preventDefault();
+	}, false);
+	
+	function func() {
+		var today = new Date();
+		var time = today.getHours();
+		
+		var x = document.getElementById("inp").value;
+		if(x=="750000.0"){
+			location.replace("level2.html");
+		}
+		else if(x==time){
+			location.replace("time.html");
+		}
+	
+	}
+	
+	
+	
+	
+</script>
+
+<body background="img.png">
+<center>
+<h1>LEVEL 1</h1>
+<br><br><br>
+
+<img src="main.jpg"></img>
+
+<div>
+	<p>0 is what you see, 1 is one what you need</p>
+	<p>To understand the importance of what, not understood by</p>
+	<p>Some By Mean, SOME WITH GREED</p>
+</div>
+
+<div>
+	<input type="text" id="inp"><br><br><br>
+	<button class = "button button1" onclick="func()">SUBMIT</button>
+</div>
+</body>
+
+</html>
